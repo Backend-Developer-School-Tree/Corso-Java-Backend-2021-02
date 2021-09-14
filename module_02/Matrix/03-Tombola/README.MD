@@ -5,5 +5,5 @@
 * In caso di tombola invece, la funzione restituirà direttamente la stringa «TOMBOLA!!»
 
 <p align="center">
-<img src="./tombola.png"  class="center">
+<img src="./Tombola.png"  class="center">
 </p>
