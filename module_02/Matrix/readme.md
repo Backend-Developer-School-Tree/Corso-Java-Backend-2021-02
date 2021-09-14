@@ -89,8 +89,8 @@ public class MatriciCode {
 
 Esercizio | Difficoltà
 ------------ | -------------
-[Bot base](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-01/tree/main/module_06/Telegram/01_BotBase) | :kick_scooter:
-[Random media bot](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-01/tree/main/module_06/Telegram/02_RandomMedia) | :kick_scooter:
-[CruciPuzzle](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-01/tree/main/module_06/Telegram/03_Lista_della_spesa) | :motor_scooter:
-[Questionari](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-01/tree/main/module_06/Telegram/04_Questionari) | :motor_scooter: /:motorcycle:
-[Morra cinese a carte](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-01/tree/main/module_06/Telegram/05_Morra_cinese_carte) |  :motorcycle:
+[Diagonale](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_02/Matrix/01-Diagonale) | :kick_scooter:
+[Tabelline](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_02/Matrix/02-Tabelline_in_matrice) | :kick_scooter:
+[Tombola](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_02/Matrix/03-Tombola) | :motor_scooter:
+[Match three](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_02/Matrix/04-MatchThree) | :motorcycle:
+[Crucipuzzle](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_02/Matrix/05-CruciPuzzle) |  :motorcycle:

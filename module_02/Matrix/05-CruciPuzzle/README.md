@@ -1,4 +1,4 @@
-# CruciPuzzle
+# CruciPuzzle :motorcycle:
 
 ![Esempio](./CruciPuzzle.png)
 
