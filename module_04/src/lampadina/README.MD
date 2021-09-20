@@ -1,6 +1,6 @@
 # Lampadina :bulb:
 
-## Esercizio 1
+## ListaOrdinata 1
 Progettare una classe Lampadina, che modella una lampadina classica
 La lampadina può essere accesa, spenta o rotta
 La classe epone due metodi
@@ -15,7 +15,7 @@ La classe deve contenere
 Scrivere una classe di test che verifichi il funzionamento delle classi
 
 
-## Esercizio 2
+## ListaOrdinata 2
 Progettare una classe Interruttore per la lampadina dell'esercizio 1
 
 * Ogni interruttore regola il comportamento di una lampadina
@@ -23,7 +23,7 @@ Progettare una classe Interruttore per la lampadina dell'esercizio 1
 * Creare una classe di test che, dopo aver istanziato due interruttori collegati alla stessa lampadina, permetta all'utente di utilizzare il primo o il secondo interruttore interagendo tramite la console, finchè non decide di interrompere l'interazione
 
 
-## Esercizio 3
+## ListaOrdinata 3
 Modificare la classe Lampadina facendo in modo che tutte le lampadine condividano l'informazione relativa alla presenza di corrente all'interno di un ipotetico impianto. Possiamo immaginare che tutte le lampadine siano collegate allo stesso impianto di corrente
 
 Le lampadine devono comportarsi in modo coerente rispetto alla presenza o assenza di corrente all'interno dell'impianto

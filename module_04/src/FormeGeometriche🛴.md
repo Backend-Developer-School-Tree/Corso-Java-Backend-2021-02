@@ -1,4 +1,4 @@
-Esercizio Forme Geometriche 🛴 
+ListaOrdinata Forme Geometriche 🛴 
 
 Scrivere un programma in grado di modellare il concetto di forma geometrica
  associato a quadrati e rettangoli. In particolare, create le classi 
