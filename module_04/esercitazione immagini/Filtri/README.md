@@ -38,7 +38,7 @@ Per esempio, se un pixel ha come valore (100, 20, 225) il suo negativo sarà (15
 
 ## **5. Filtro posterize**
 
-L'ultimo filtro il posterize non soltanto prende in input un'immagine ma anche un intero positivocN, il filtro quindi quantizza i valori dei singoli canali dei pixel in N livelli. Per esempio se diamo 2 come valore ogni pixel per ogni canale potrà avere valori che saranno 0 o 127. L'immagine di esempio è stata creata dandogli 3 come input di livelli.
+L'ultimo filtro il posterize non soltanto prende in input un'immagine ma anche un intero positivo N, il filtro quindi quantizza i valori dei singoli canali dei pixel in N livelli. Per esempio se diamo 2 come valore ogni pixel per ogni canale potrà avere valori che saranno 0 o 127. L'immagine di esempio è stata creata dandogli 3 come input di livelli.
 
 ![freaked](./posterized.jpg)
 

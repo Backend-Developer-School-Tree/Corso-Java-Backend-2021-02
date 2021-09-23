@@ -23,7 +23,7 @@ Un'immagine è una rappresentazine visiva e non solida della realtà che possiam
 
 # Pixel e colori
 
-Un pixel è un tipo di dato che serve a rappresentare un colore. Per fare ciò, solitamente un pixel si avvale di 3 canali RGB (rosso, verde, blu) e la combinazione di quanto sono attivi i 3 canali ci da come risultato un colore. Il range dei valori va da 0 a 255 perciò con un byte riusciamo a rappresentare un canale e con 3 byte l'intero colore. Il formato RGB è pensato sulla logica dei colori della luce perciò i tre canali accesi al massimo danno il bianco (luce pura) mentre i 3 colori spenti danno il nero, possiamo quindi definire il formato RGB come **additivo**, I colori a cui siamo abituati noi solitamente non funzionano al contrario, per esempio mischiando molte vernici colorate si ottiene un colore molto più scuro di quelli di partenza.
+Un pixel è un tipo di dato che serve a rappresentare un colore. Per fare ciò, solitamente un pixel si avvale di 3 canali RGB (rosso, verde, blu) e la combinazione di quanto sono attivi i 3 canali ci da come risultato un colore. Il range dei valori va da 0 a 255 perciò con un byte riusciamo a rappresentare un canale e con 3 byte l'intero colore. Il formato RGB è pensato sulla logica dei colori della luce perciò i tre canali accesi al massimo danno il bianco (luce pura) mentre i 3 colori spenti danno il nero, possiamo quindi definire il formato RGB come **additivo**, I colori a cui siamo abituati noi solitamente funzionano al contrario, per esempio mischiando molte vernici colorate si ottiene un colore molto più scuro di quelli di partenza.
 
 <p align="center">
 <img src="https://www.fc1492.com/wp-content/uploads/2017/02/rgb.png" height="480" class="center">
@@ -109,7 +109,7 @@ Ora possedete le nozioni basi per poter lavorare con le immagini in Java e poter
 
 Esercizio | Difficoltà
 ------------ | -------------
-[Bandiere](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_04/esercitazione%20immagini/256_shades_of_gray) | :kick_scooter:
+[Bandiere](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_04/esercitazione%20immagini/Bandiere) | :kick_scooter:
 [256 shades of gray](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_04/esercitazione%20immagini/256_shades_of_gray) | :kick_scooter:
 [Filtri immagine](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_04/esercitazione%20immagini/Filtri) | :kick_scooter:
 [Green screen](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_04/esercitazione%20immagini/Green_Screen) | :motor_scooter:
