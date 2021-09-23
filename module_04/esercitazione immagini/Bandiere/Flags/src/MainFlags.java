@@ -20,9 +20,9 @@ public class MainFlags {
         for (int row = 0; row < outputImage.getHeight(); row++)
             for(int col = 0; col < outputImage.getWidth(); col++)
                 if(row <= outputImage.getHeight() / 2)
-                    outputImage.setRGB(col,row, redColor);
-                else
                     outputImage.setRGB(col,row, whiteColor);
+                else
+                    outputImage.setRGB(col,row, redColor);
         return outputImage;
     }
 
