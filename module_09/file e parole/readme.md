@@ -1,3 +1,5 @@
+# FILE E PAROLE 🛴
+
 Spesso è interessante analizzare uno o più file di testo in una determinata lingua per comprendere quali siano le parole più frequenti (o anche le lettere più frequenti). Questo tipo di lavoro è molto utilizzato in vari ambiti, dalla crittografia alla linguistica al Natural Language Processing. La seguente classe da realizzare, la classe FileAndParole effettua alcune di queste operazioni. Essa è composta dai seguenti metodi:
 
 -stampaParole(Path file): questo metodo prende in input un oggetto della classe Path del package java.nio.file rappresentante un file di testo e stampa riga per riga tutte le parole contenute nel testo. Si supponga che ogni parola sia separata da spazio e non vi siano segni di punteggiatura.
