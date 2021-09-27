@@ -29,7 +29,7 @@ public class FileAndParole {
      * @param file: nome di un file di testo
      * @return un dizionario contenente le occorrenze delle parole
      */
-    public static Map<String, Integer> occorrenzeParole(File file) throws FileNotFoundException {
+    public static Map<String, Integer> occorrenzeParole(Path file) throws FileNotFoundException {
         Scanner s = new Scanner(file);
         Map<String, Integer> diz = new HashMap<>();
         while (s.hasNext()) {
