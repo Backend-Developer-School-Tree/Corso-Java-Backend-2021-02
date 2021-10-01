@@ -1,5 +1,9 @@
-# Compiled class file
+# Artifacts
+out
 *.class
+
+# IntelliJ IDEA
+.idea
 
 # Log file
 *.log
