@@ -1,4 +1,4 @@
-# Buoni e Cattivi :kick_scooter:
+# Buoni e Cattivi :kick_scooter:/:motor_scooter:
 
 Realizzare un bot in grado di riconoscere e gestire due tipologie di sticker telegram: quella degli stickers buoni e quella degli stickers cattivi. Per riconoscere le due tipologie non serviranno intelligenze artificiali o cose fantascientifiche, basterà farsi dire dall'utente se lo sticker è buono o cattivo quando ne manda uno nuovo. Perciò il bot 1uando riceve uno sticker controlla se lo conosce e se fa parte dei buoni o dei cattivi, se non lo conosce chiederà all'utente di farsi dire la tipologia dandolgi una comoda tastiera per farlo.
 

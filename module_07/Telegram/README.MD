@@ -179,9 +179,10 @@ Esercizio | Difficoltà
 ------------ | -------------
 [Bot base](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/01_BotBase) | :kick_scooter:
 [Random media bot](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/02_RandomMedia) | :kick_scooter:
-[Lista della spesa](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/03_Lista_della_spesa) | :motor_scooter:
-[Questionari](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/04_Questionari) | :motor_scooter: /:motorcycle:
-[Morra cinese a carte](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/05_Morra_cinese_carte) |  :motorcycle:
+[Buoni e Cattivi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_07/Telegram/03_Buoni_e_Cattivi) | :kick_scooter:/:motor_scooter:
+[Lista della spesa](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/04_Lista_della_spesa) | :motor_scooter:
+[Questionari](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/05_Questionari) | :motor_scooter:/:motorcycle:
+[Morra cinese a carte](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_06/Telegram/06_Morra_cinese_carte) |  :motorcycle:
 
 
 E se riuscite a finirli tutti... create il vostro bot personale!
