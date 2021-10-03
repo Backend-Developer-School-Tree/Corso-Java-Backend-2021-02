@@ -144,6 +144,12 @@ Questi tasti se premuti dall'utente inviano un messaggio col testo del pulsante,
     }
 ```
 
+Rimuovere una tastiera è estremamente facile, ci basta soltanto mettere come tastiera di un messaggio una __ReplyKeyboardRemove__:
+
+```java
+message = new MessageToSend(message.getFrom().getId(), "Ora ti levo la tastiera!");
+message.setReplyMarkup(new ReplyKeyboardRemove());
+```
 ## Inviare Immagini, stickers, note audio, musica, file etc...
 
 Anche i bot come gli utenti umani possono inviare file multimediali. Esistono due modi per inviare un file in una chat, o inviamo il file multimediale oppure possiamo utilizzare la reference di un file. Telegram assegna a ogni file che gli viene inviato un "file id" univoco che possiamo utilizzare per inviare successivamente quel file nelle chat.
@@ -159,9 +165,13 @@ Per conoscere il file id di un File, ci basta inviarcene uno ad un nostro bot di
 ```java
     @Override
     public void stickerMessage(Message message) {
-        System.out.println(message.getSticker().getFileID());
+        System.out.println(message.getSticker().getId());
     }
 ```
+
+## FileID e File_unique_id
+
+Recentemente Telegram per ragioni di sicurezza ha introdotto un nuovo tipo di file ID ovvero il File_unique_id(). Sono due ID diversi con scopi diversi: il primo cambia sempre ad ogni messaggio che ricevete ma vi permette sia di scaricare il file che di poter utilizzare quel file chat o in altre chat; il secondo è univoco e identifica quella specifica risorsa in Telegram e non cambia mai di messaggio in messaggio. Perciò se dovete riconoscere una specifica risorsa utilizzate il secondo, se invece dovete scaricare o inviare quella risorsa utilizzate il primo.
 
 Non avendo visto ancora come gestire i file in Java, non vedremo l'altra modalità di invio, negli esercizi di oggi basterà soltanto utilizzare le reference!
 
