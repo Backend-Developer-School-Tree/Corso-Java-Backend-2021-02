@@ -89,7 +89,7 @@ La classe PrimoBot è un esempio di classe Bot che però al momento non fa nulla
 ```
 E molti altri!
 
-Questi metodi rappresentano i tipi di messaggio che vi possono arrivare, perciò per esempio quando arriva un messaggio di testo viene chiamato il metodo textMessage(Message message) e quando invece arriva uno sticker al bot viene chiamato il messaggio public void stickerMessage(Message message). L'oggetto Message non è altro che la conversione 1 a 1 di [questo oggetto](https://core.telegram.org/bots/api#message) che invia Telegram; perciò quando viene chiamato il metodo stickerMessage(Message message) potete stare certi che il campo sticker di message è popolato e quindi potete utilizzare il metodo getSticker() e ottenere uno sticker. Gli oggetti seguono fedelmente la conformazione che trovate nella [pagina di documentazione ufficiale di Telegram](https://core.telegram.org/bots/api), perciò tenete sempre la pagina aperta e a portata di mano :wink:
+Questi metodi rappresentano i tipi di messaggio che vi possono arrivare, perciò per esempio quando arriva un messaggio di testo viene chiamato il metodo textMessage(Message message) e quando invece arriva uno sticker al bot viene chiamato il metodo public void stickerMessage(Message message). L'oggetto Message non è altro che la conversione 1 a 1 di [questo oggetto](https://core.telegram.org/bots/api#message) che invia Telegram; perciò quando viene chiamato il metodo stickerMessage(Message message) potete stare certi che il campo sticker di message è popolato e quindi potete utilizzare il metodo getSticker() e ottenere uno sticker. Gli oggetti seguono fedelmente la conformazione che trovate nella [pagina di documentazione ufficiale di Telegram](https://core.telegram.org/bots/api), perciò tenete sempre la pagina aperta e a portata di mano :wink:
 
 ## Inviare un messaggio di testo
 Per inviare un messaggio di testo bisogna utilizzare il metodo sendMessage() che prende in input un oggetto di tipo MessageToSend
@@ -171,7 +171,7 @@ Per conoscere il file id di un File, ci basta inviarcene uno ad un nostro bot di
 
 ## FileID e File_unique_id
 
-Recentemente Telegram per ragioni di sicurezza ha introdotto un nuovo tipo di file ID ovvero il File_unique_id(). Sono due ID diversi con scopi diversi: il primo cambia sempre ad ogni messaggio che ricevete ma vi permette sia di scaricare il file che di poter utilizzare quel file chat o in altre chat; il secondo è univoco e identifica quella specifica risorsa in Telegram e non cambia mai di messaggio in messaggio. Perciò se dovete riconoscere una specifica risorsa utilizzate il secondo, se invece dovete scaricare o inviare quella risorsa utilizzate il primo.
+Recentemente Telegram per ragioni di sicurezza ha introdotto un nuovo tipo di file ID ovvero il File_unique_id(). Sono due ID diversi con scopi diversi: il primo cambia sempre ad ogni messaggio che ricevete ma vi permette sia di scaricare il file che di poter utilizzare quel file nella chat o in quelle con altri utenti; il secondo è univoco e identifica quella specifica risorsa in Telegram e non cambia mai di messaggio in messaggio. Perciò se dovete riconoscere una specifica risorsa utilizzate il secondo, se invece dovete scaricare o inviare quella risorsa utilizzate il primo.
 
 Non avendo visto ancora come gestire i file in Java, non vedremo l'altra modalità di invio, negli esercizi di oggi basterà soltanto utilizzare le reference!
 
