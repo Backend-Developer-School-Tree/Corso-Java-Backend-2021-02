@@ -4,92 +4,87 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class TweetsParser {
 
-    Map<String, Integer> countMap = new HashMap<>();
-    Map<Integer, Set<String>> frequencyMap = new TreeMap<>(Collections.reverseOrder());
-    //Queue<WordObject> wordsByFrequency = new PriorityQueue<>(Collections.reverseOrder());
+    private final Map<String, Word> wordMap = new HashMap<>();
 
-    Set<String> getMostFrequentWords(int n) throws IOException {
-        Set<String> result = new HashSet<>();
-        for(Integer count : frequencyMap.keySet()) {
-            Set<String> words = frequencyMap.get(count);
-            for(String s : words)
-                if(result.size() < n)
-                    result.add(s);
-                else
-                    return result;
-        }
-        return result;
-    }
+    public Set<String> getMostFrequentWords(String path, String stopWordsPath, int columnIndex, int n) throws IOException {
 
-    public void buildMap(String path) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(path))) {
-            String line = br.readLine(); //skip first
-            while ((line = br.readLine()) != null) {
-                processLine(line);
-            }
+            String line = br.readLine(); // first line (csv header)
+
+            int columnsCnt = line.split(",").length;
+
+            Set<String> stopWords = getStopWords(stopWordsPath);
+
+            while ((line = br.readLine()) != null) processLine(line, stopWords, columnsCnt, columnIndex);
         }
 
-        /*for(String word : countMap.keySet()) {
-            wordsByFrequency.add(new WordObject(word, countMap.get(word)));
-        }*/
-
+        return wordMap.values().stream()
+                .sorted(Comparator.reverseOrder())
+                .limit(n)
+                .map(Word::getWord)
+                .collect(Collectors.toSet());
     }
 
-    private void processLine(String line) {
+    private Set<String> getStopWords(String filePath) throws IOException {
+
+        Set<String> stopWords = new HashSet<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null)
+                stopWords.add(line);
+        }
+
+        return stopWords;
+    }
+
+    private void processLine(String line, Set<String> stopWords, int headerColumnsCnt, int columnIndex) {
+
+        int missingColumnsCnt = 0;
+        int i = line.length() - 1;
+        while (line.charAt(i--) == ',') missingColumnsCnt++;
+
+        int expectedColumnsCnt = headerColumnsCnt - missingColumnsCnt;
+
         String[] components = line.split(",");
+        int extraContentColumnsCnt = components.length - expectedColumnsCnt; // > 0 when "content" column contains commas
+
         String content = "";
-        for(int i=0; i<components.length; i++)
-            if((i >= 2 && i < components.length-3))
+
+        for (i = 0; i < components.length; i++)
+            if ((i >= columnIndex && i <= columnIndex + extraContentColumnsCnt))
                 content += components[i];
 
-        for(String word : content.split(" ")){
+        for (String word : content.split(" ")) {
             String cleanWord = cleanData(word);
-            if(cleanWord.isEmpty())
-                continue;
-            int count = countMap.getOrDefault(cleanWord, 1) + 1;
-            countMap.put(cleanWord, count);
 
-            if(frequencyMap.containsKey(count)) {
-                frequencyMap.get(count).add(cleanWord);
-                if(frequencyMap.containsKey(count-1))
-                    frequencyMap.get(count-1).remove(cleanWord);
-            }
-            else {
-                Set<String> s = new HashSet<>();
-                s.add(cleanWord);
-                frequencyMap.put(count, s);
-                if(frequencyMap.containsKey(count-1))
-                    frequencyMap.get(count-1).remove(cleanWord);
-            }
+            if (cleanWord.isEmpty() || stopWords.contains(cleanWord)) continue;
 
-            if(frequencyMap.containsKey(count-1))
-                frequencyMap.get(count-1).remove(cleanWord);
+            Word wordObject = wordMap.getOrDefault(cleanWord, new Word(cleanWord, 0));
+            wordObject.increaseCount();
+            wordMap.put(cleanWord, wordObject);
         }
     }
 
     private static String cleanData(String tweet) {
-            //convert tweet to lower case
-            tweet = tweet.toLowerCase();
 
-            //remove # from hash tag
-            tweet = tweet.replaceAll("#", "");
+        //convert tweet to lower case
+        tweet = tweet.toLowerCase();
 
-            //remove punctuation
-            tweet = tweet.replaceAll("[-+.^:,()&%$\"\'!;=<=/#@?^_]", "");
-
-            //remove only numbers text
-            tweet = tweet.replaceAll("[0-9]", "");
+        //removes all non-letter characters
+        tweet = tweet.replaceAll("[^a-zA-Z]", "");
 
         return tweet;
     }
 
     public static void main(String[] args) throws IOException {
-        String path = "/Users/mel/Desktop/realdonaldtrump.csv";
+        String path = "put here a valid csv path";
+        String stopWordsPath = "put here a valid stopwords txt file path";
         TweetsParser tweetsParser = new TweetsParser();
-        tweetsParser.buildMap(path);
-        System.out.println(tweetsParser.getMostFrequentWords(10));
+        System.out.println(tweetsParser.getMostFrequentWords(path, stopWordsPath, 2, 10));
     }
 }

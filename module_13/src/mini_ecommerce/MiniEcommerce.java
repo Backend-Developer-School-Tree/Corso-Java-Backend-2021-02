@@ -22,7 +22,7 @@ public class MiniEcommerce {
                         return "already present";
                     }
                     products.add(product);
-                    res.status(201);
+                    res.status(200);
                     return "ok";
                 });
                 delete("/remove", (req, res) -> {
@@ -41,7 +41,7 @@ public class MiniEcommerce {
                     }
                     int quantity = Integer.parseInt(quantityString);
                     Optional<Product> productIdOptional = getProduct(productId);
-                    if(!productIdOptional.isPresent()) {
+                    if(productIdOptional.isEmpty()) {
                         res.status(404);
                         return "not found";
                     }
