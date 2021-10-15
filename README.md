@@ -18,6 +18,7 @@ This repo collects all the excercises produced and gathered by [Andrea Rosati](h
 | 7      | Generics & Collections   | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_07/src) |
 | 8      | Eccezioni e annotazioni  | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_08) |
 | 9      | Packages                 | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_09/src) |
+| 10     | Design Patterns          | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_10/src) |
 | 13     | API                      | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_13/src) |
 | 16     | Database                 | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_16) |
 
