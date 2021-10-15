@@ -14,7 +14,7 @@ This repo collects all the excercises produced and gathered by [Andrea Rosati](h
 | 3      | Git                      | [Labirinth](https://github.com/Backend-Developer-School-Tree/Corso-Java-backend-2021-02/tree/main/module_03) |
 | 4      | OOP                      | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_04/src), [Esercitazione immagini](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_04/esercitazione%20immagini) |
 | 5      | Inheritance              | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_05/src) |
-| 6      | Advanced inheritance     | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_06/src) |
+| 6      | Advanced inheritance     | [Telegram](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_06/Telegram), [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_06/src) |
 | 7      | Generics & Collections   | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_07/src) |
 | 13     | API                      | [Esercizi](https://github.com/Backend-Developer-School-Tree/Corso-Java-Backend-2021-02/tree/main/module_13/src) |
 
